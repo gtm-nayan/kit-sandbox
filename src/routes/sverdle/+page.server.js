@@ -1,6 +1,6 @@
 import { fail } from '@sveltejs/kit';
 import { words, allowed } from './words.server';
-
+export const prerender = false;
 export const load = ({ cookies }) => {
 	const game = new Game(cookies.get('sverdle'));
 
